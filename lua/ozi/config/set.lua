@@ -1,3 +1,5 @@
+vim.opt.swapfile = false
+
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
