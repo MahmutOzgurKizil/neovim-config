@@ -9,7 +9,7 @@ return {
                }
           }
      },
-     config = function() 
+     config = function()
           require("mason").setup()
      end
 }
