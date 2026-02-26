@@ -2,6 +2,7 @@ vim.opt.swapfile = false
 
 require("config.lazy")
 require("config.options")
+require("config.lsp")
 
 -- treesitter config
 require'nvim-treesitter'.install { "rust", "c", "java", "vim", "lua" }

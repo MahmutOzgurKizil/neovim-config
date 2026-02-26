@@ -1,5 +1,6 @@
 - [ ] Setup LSP server
-    - [ ] Which ones to download?
+    - [x] Which ones to download? Lookup from neovim/nvim-lspconfig   
     - [ ] Setup the keymaps for LSP
 
 - [ ] Search about more remaps
+- [ ] Find git package for better usability
