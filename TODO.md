@@ -4,3 +4,4 @@
 
 - [ ] Search about more remaps
 - [ ] Find git package for better usability
+- [x] Add line numbers
