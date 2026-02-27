@@ -17,8 +17,16 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set('i', '<C-h>', function() vim.lsp.buf.signature_help() end, opts)
   end,
 })
-
 -- Get the names of LSP's from https://github.com/neovim/nvim-lspconfig/tree/master/lsp to enable it
-vim.lsp.enable("lua_ls")
+vim.lsp.config("lua_ls", {
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = { "vim" }
+            }
+        }
+    }
+})
+
 vim.lsp.enable("clangd")
 vim.lsp.enable("rust_analyzer")

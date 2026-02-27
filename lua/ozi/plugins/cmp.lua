@@ -35,11 +35,6 @@ return {
                     mode = "symbol_text",  -- Uses font-symbols-only-nerd-fon
                     maxwidth = 50,         -- Cuts off long completion items
                     ellipsis_char = '...', -- Shows an ellipsis when truncated
-                    symbol_map = {
-                        Snippet = "",
-                        Module = "",
-                        Interface = "",
-                    },
                 }),
             },
             mapping = cmp.mapping.preset.insert({

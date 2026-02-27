@@ -1,8 +1,10 @@
-- [ ] Setup LSP server
+- [x] Setup LSP server
     - [x] Which ones to download? Lookup from neovim/nvim-lspconfig   
-    - [ ] Setup the keymaps for LSP
+    - [x] Setup the keymaps for LSP
 
-- [ ] Search about more remaps
-    - [ ] Find remaps for cmp for lsp
+- [x] Search about more remaps
+    - [x] Find remaps for cmp for lsp
 - [ ] Find git package for better usability
+- [ ] Add filetree
+- [ ] Modify status line
 - [x] Add line numbers
