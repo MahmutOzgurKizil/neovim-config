@@ -3,9 +3,9 @@ return {
      opts = {
           ui = {
                icons = {
-                    package_installed = "✓",
-                    package_pending = "➜",
-                    package_uninstalled = "✗"
+                    package_installed = "v/",
+                    package_pending = "->",
+                    package_uninstalled = "x"
                }
           }
      },
