@@ -1,5 +1,8 @@
 vim.opt.swapfile = false
 
+vim.opt.title = true
+vim.opt.titlestring = "%{fnamemodify(getcwd(), ':t')}/%{expand('%:p:~:.')}"
+
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
