@@ -19,9 +19,27 @@ return {
                     luasnip.lsp_expand(args.body)
                 end,
             },
+            window = {
+                completion = cmp.config.window.bordered({
+                    max_width = 80,
+                    winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None",
+                }),
+                documentation = cmp.config.window.bordered({
+                    max_width = 60,
+                    max_height = 20,
+                    winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None",
+                }),
+            },
             formatting = {
                 format = lspkind.cmp_format({
-                    mode = "symbol_text",
+                    mode = "symbol_text",  -- Uses font-symbols-only-nerd-fon
+                    maxwidth = 50,         -- Cuts off long completion items
+                    ellipsis_char = '...', -- Shows an ellipsis when truncated
+                    symbol_map = {
+                        Snippet = "",
+                        Module = "",
+                        Interface = "",
+                    },
                 }),
             },
             mapping = cmp.mapping.preset.insert({
