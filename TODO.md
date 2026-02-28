@@ -6,5 +6,5 @@
     - [x] Find remaps for cmp for lsp
 - [ ] Find git package for better usability
 - [ ] Add filetree
-- [ ] Modify status line
+- [x] Modify status line
 - [x] Add line numbers

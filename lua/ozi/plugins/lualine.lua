@@ -59,8 +59,8 @@ return {
                 )
             end
 
-            function diagnostics_message:update_status(is_focused)
-                local r, _ = unpack(vim.api.nvim_win_get_cursor(0))
+            function diagnostics_message:update_status()
+                local r, _ = table.unpack(vim.api.nvim_win_get_cursor(0))
                 local diagnostics = vim.diagnostic.get(0, { lnum = r - 1 })
                 if #diagnostics > 0 then
                     local diag = diagnostics[1]
@@ -79,7 +79,7 @@ return {
 
             require('lualine').setup({
                 options = {
-                    theme = 'auto',
+                    theme = 'iceberg_dark',
                     icons_enabled = true,
                     component_separators = { left = '', right = '' },
                     section_separators = { left = '', right = '' },

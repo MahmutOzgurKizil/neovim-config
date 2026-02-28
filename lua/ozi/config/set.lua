@@ -59,3 +59,25 @@ vim.diagnostic.config({
     },
 })
 
+--[[ Simple filetree setup
+vim.keymap.set('n', '<leader>ft', function()
+    vim.cmd("botright 40vnew")
+    local buf = vim.api.nvim_get_current_buf()
+
+    vim.bo[buf].buftype = "nofile"
+    vim.bo[buf].bufhidden = "wipe"
+    vim.bo[buf].swapfile = false
+
+    local tree_output = vim.fn.systemlist("tree")
+
+    if vim.v.shell_error ~= 0 then
+        tree_output = { "Error: Could not run 'tree'.", "Make sure it is installed on your OS." }
+    end
+
+    vim.api.nvim_buf_set_lines(buf, 0, -1, false, tree_output)
+
+    vim.bo[buf].modifiable = false
+    vim.keymap.set('n', 'q', ':q<CR>', { buffer = buf, silent = true, desc = "Close Tree" })
+
+end, { desc = "Show text file tree on the right" })
+]]

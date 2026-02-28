@@ -1,5 +1,5 @@
 return {
-    'nvim-telescope/telescope.nvim', 
+    'nvim-telescope/telescope.nvim',
     version = '0.2.1',
     dependencies = {
         'nvim-lua/plenary.nvim',
@@ -18,7 +18,7 @@ return {
 		end
 	end, { desc = 'Telescope Git files' })
 
-        vim.keymap.set('n', '<leader>ps', function() 
+        vim.keymap.set('n', '<leader>ps', function()
             builtin.grep_string({ search = vim.fn.input("Grep > ") });
         end, { desc = 'Telescope find files with grep'})
     end
