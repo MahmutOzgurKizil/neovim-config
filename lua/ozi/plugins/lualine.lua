@@ -18,6 +18,12 @@ return {
                                 info = "#A3BE8C",
                                 hint = "#88C0D0",
                             },
+                            icons = {
+                                error = "",
+                                warn  = "",
+                                info  = "",
+                                hint  = "",
+                            },
                             first_line_only = true,
                         },
                     }
