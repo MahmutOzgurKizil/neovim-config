@@ -44,6 +44,20 @@ return {
                 ["<C-p>"] = cmp.mapping.select_prev_item(),
                 ["<C-d>"] = cmp.mapping.scroll_docs(4),
                 ["<C-u>"] = cmp.mapping.scroll_docs(-4),
+                ["<Tab>"] = cmp.mapping(function(fallback)
+                    if luasnip.locally_jumpable(1) then
+                        luasnip.jump(1)
+                    else
+                        fallback()
+                    end
+                end, { "i", "s" }),
+                ["<S-Tab>"] = cmp.mapping(function(fallback)
+                    if luasnip.locally_jumpable(-1) then
+                        luasnip.jump(-1)
+                    else
+                        fallback()
+                    end
+                end, { "i", "s" }),
             }),
             sources = cmp.config.sources({
                 { name = "nvim_lsp" },
