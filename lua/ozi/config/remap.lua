@@ -11,6 +11,13 @@ vim.keymap.set("n", "<leader>gs", function()
 	end
 end)
 
+vim.keymap.set("n", "<leader>gt", function()
+	local ok = pcall(vim.cmd.Git, "log --oneline --graph --all")
+	if not ok then
+		print("Git is not initialized!")
+	end
+end)
+
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 

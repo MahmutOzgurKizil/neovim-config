@@ -7,15 +7,17 @@ return {
             signs = {
                 add          = { text = '▎' },
                 change       = { text = '▎' },
-                delete       = { text = '▎' },
-                topdelete    = { text = '▎' },
-                changedelete = { text = '▎' },
+                delete       = { text = '_' },
+                topdelete    = { text = '‾' },
+                changedelete = { text = '~' },
             },
         })
 
         vim.api.nvim_set_hl(0, 'GitSignsAdd',    { fg = '#68f71a' })
         vim.api.nvim_set_hl(0, 'GitSignsChange', { fg = '#12eacd' })
         vim.api.nvim_set_hl(0, 'GitSignsDelete', { fg = '#ed0c0f' })
+        vim.api.nvim_set_hl(0, 'GitSignsTopdelete',    { fg = '#ed0c0f' })
+        vim.api.nvim_set_hl(0, 'GitSignsChangedelete', { fg = '#12eacd' })
 
         vim.keymap.set('n', ']h', function() gs.nav_hunk('next') end, { desc = 'Next hunk' })
         vim.keymap.set('n', '[h', function() gs.nav_hunk('prev') end, { desc = 'Prev hunk' })
