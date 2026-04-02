@@ -3,20 +3,19 @@
 ## Plugins
 
 1. **cmp** - Completion engine
-2. **dap** - Debugging (DAP support)
-3. **fugitive** - Git integration
-4. **gitsigns** - Git signs and hunks
-5. **harpoon** - Quick file navigation
-6. **indent-blankline** - Visual indentation guides
-7. **lspconfig** - LSP configuration
-8. **lualine** - Status line
-9. **mason** - LSP/DAP package manager
-10. **nvim-autopairs** - Auto-closing pairs
-11. **rose-pine** - Color theme
-12. **telescope** - Fuzzy finder
-13. **toggleterm** - Terminal toggle
-14. **treesitter** - Syntax highlighting and parsing
-15. **undotree** - Undo history visualization
+2. **fugitive** - Git integration
+3. **gitsigns** - Git signs and hunks
+4. **harpoon** - Quick file navigation
+5. **indent-blankline** - Visual indentation guides
+6. **lspconfig** - LSP configuration
+7. **lualine** - Status line
+8. **mason** - LSP package manager
+9. **nvim-autopairs** - Auto-closing pairs
+10. **rose-pine** - Color theme
+11. **telescope** - Fuzzy finder
+12. **toggleterm** - Terminal toggle
+13. **treesitter** - Syntax highlighting and parsing
+14. **undotree** - Undo history visualization
 
 ## Keybindings
 
@@ -69,3 +68,5 @@
 | Shortcut | Action |
 |----------|--------|
 | `<leader>u` | Toggle undotree |
+
+🫪

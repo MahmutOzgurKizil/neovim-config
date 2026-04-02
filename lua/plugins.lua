@@ -9,7 +9,6 @@ vim.pack.add({
     { src = "https://github.com/rose-pine/neovim" },
     { src = "https://github.com/lukas-reineke/indent-blankline.nvim" },
     { src = "https://github.com/akinsho/toggleterm.nvim" },
-    { src = "https://github.com/mbbill/undotree" },
     { src = "https://github.com/neovim/nvim-lspconfig"},
     { src = "https://github.com/mason-org/mason.nvim"},
     "https://github.com/mason-org/mason-lspconfig.nvim",

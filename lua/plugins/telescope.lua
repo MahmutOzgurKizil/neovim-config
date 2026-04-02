@@ -7,9 +7,6 @@ telescope.setup({
     },
 })
 
--- Load fzf extension if available
-pcall(telescope.load_extension, "fzf")
-
 vim.keymap.set("n", "<leader>pf", builtin.find_files, { desc = "Telescope find files" })
 
 vim.keymap.set("n", "<C-p>", function()
