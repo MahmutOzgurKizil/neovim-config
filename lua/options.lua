@@ -29,13 +29,13 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
-
 vim.opt.colorcolumn = "80"
-
--- vim.g.mapleader = " "
-
 vim.opt.showmode = false
 
+-- Native completion
+vim.opt.completeopt = { "menuone", "noselect", "popup" }
+
+-- Diagnostic signs (nerd font icons)
 local severity = vim.diagnostic.severity
 vim.diagnostic.config({
     signs = {
