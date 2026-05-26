@@ -1,6 +1,10 @@
 vim.opt.title = true
 vim.opt.titlestring = "%{fnamemodify(getcwd(), ':t')}/%{expand('%:p:~:.')}"
 
+vim.api.nvim_create_user_command('PackUpdate', function()
+  vim.pack.update()
+end, {})
+
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
