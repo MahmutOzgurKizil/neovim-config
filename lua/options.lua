@@ -7,6 +7,8 @@ end, {})
 
 vim.opt.guicursor = ""
 
+vim.g.netrw_sort_by = "exten"
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
